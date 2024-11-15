@@ -5,6 +5,7 @@
 return {
 
   -- == Examples of Adding Plugins ==
+  { "tamton-aquib/mpv.nvim", config = true },
 
   "andweeb/presence.nvim",
   {
@@ -18,7 +19,7 @@ return {
     lazy = true,
     priority = 1000,
     opts = {
-      transparent = false,
+      transparent = true,
       theme = {
         variant = "dark",
         saturation = 1,
