@@ -5,7 +5,15 @@
 return {
 
   -- == Examples of Adding Plugins ==
-  { "tamton-aquib/mpv.nvim", config = true },
+  {
+    "nvzone/volt",
+    { "nvzone/timerly", cmd = "TimerlyToggle" },
+  },
+
+  {
+    "tamton-aquib/mpv.nvim",
+    config = true,
+  },
 
   "andweeb/presence.nvim",
   {
