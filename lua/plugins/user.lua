@@ -5,6 +5,8 @@
 return {
 
   -- == Examples of Adding Plugins ==
+  { "echasnovski/mini.nvim", version = "*" },
+
   {
     "nvzone/volt",
     { "nvzone/timerly", cmd = "TimerlyToggle" },
