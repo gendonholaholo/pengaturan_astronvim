@@ -8,11 +8,8 @@ A template for getting started with [AstroNvim](https://github.com/AstroNvim/Ast
 
 #### Make a backup of your current nvim and shared folder
 
-```shell
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
-mv ~/.local/state/nvim ~/.local/state/nvim.bak
-mv ~/.cache/nvim ~/.cache/nvim.bak
+```Powershell
+mv ~/AppData/Local/nvim ~/AppData/Local/nvim.bak
 ```
 
 #### Create a new user repository from this template
@@ -23,12 +20,12 @@ You can also just clone this repository directly if you do not want to track you
 
 #### Clone the repository
 
-```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
+```Powershell
+git clone https://github.com/<your_user>/<your_repository> ~/AppData/Local/nvim
 ```
 
 #### Start Neovim
 
-```shell
+```Powershell
 nvim
 ```
