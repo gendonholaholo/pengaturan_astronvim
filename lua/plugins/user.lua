@@ -7,6 +7,11 @@ return {
   -- == Examples of Adding Plugins ==
 
   {
+    "IogaMaster/neocord",
+    event = "VeryLazy",
+  },
+
+  {
     "barrett-ruth/live-server.nvim",
     build = "pnpm add -g live-server",
     cmd = { "LiveServerStart", "LiveServerStop" },
