@@ -5,7 +5,18 @@
 return {
 
   -- == Examples of Adding Plugins ==
-  { "echasnovski/mini.nvim", version = "*" },
+
+  {
+    "barrett-ruth/live-server.nvim",
+    build = "pnpm add -g live-server",
+    cmd = { "LiveServerStart", "LiveServerStop" },
+    config = true,
+  },
+
+  {
+    "echasnovski/mini.nvim",
+    version = "*",
+  },
 
   {
     "nvzone/volt",
