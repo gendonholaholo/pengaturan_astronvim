@@ -7,8 +7,10 @@ return {
   -- == Examples of Adding Plugins ==
 
   {
-    "IogaMaster/neocord",
+    "vyfor/cord.nvim",
+    build = "./build || .\\build",
     event = "VeryLazy",
+    opts = {}, -- calls require('cord').setup()
   },
 
   {
