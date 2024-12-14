@@ -5,12 +5,33 @@
 return {
 
   -- == Examples of Adding Plugins ==
+  {
+    "andweeb/presence.nvim",
+    lazy = false,
+    opts = {
+      auto_update = false, -- Update activity based on autocmd events (if `false`, map or manually execute `:lua package.loaded.presence:update()`)
+    },
+  },
 
   {
-    "barrett-ruth/live-server.nvim",
-    build = "pnpm add -g live-server",
-    cmd = { "LiveServerStart", "LiveServerStop" },
-    config = true,
+    "vyfor/cord.nvim",
+    build = "./build || .\\build",
+    event = "VeryLazy",
+    opts = {}, -- calls require('cord').setup()
+  },
+
+  {
+    "ngtuonghy/live-server-nvim",
+    event = "VeryLazy",
+    build = ":LiveServerInstall",
+    opts = {
+      custom = {
+        "--port=8080",
+        "--no-css-inject",
+      },
+      serverPath = vim.fn.stdpath "data" .. "/live-server/", --default
+      open = "folder", -- folder|cwd     --default
+    },
   },
 
   {
