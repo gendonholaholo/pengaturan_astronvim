@@ -14,6 +14,11 @@ return {
   },
 
   {
+    "wakatime/vim-wakatime",
+    lazy = false,
+  },
+
+  {
     "vyfor/cord.nvim",
     build = "./build || .\\build",
     event = "VeryLazy",
