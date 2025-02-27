@@ -5,6 +5,7 @@
 return {
 
   -- == Examples of Adding Plugins ==
+
   {
     "andweeb/presence.nvim",
     lazy = false,
