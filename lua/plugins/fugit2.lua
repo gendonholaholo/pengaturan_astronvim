@@ -18,4 +18,5 @@ return {
   keys = {
     { "<leader>F", mode = "n", "<cmd>Fugit2<cr>" },
   },
+  {},
 }
