@@ -21,8 +21,9 @@ return {
   {
     "vyfor/cord.nvim",
     build = "./build || .\\build",
+    "IogaMaster/neocord",
     event = "VeryLazy",
-    opts = {}, -- calls require('cord').setup()
+    opts = {},
   },
 
   {
