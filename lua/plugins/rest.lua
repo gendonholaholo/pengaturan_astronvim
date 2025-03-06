@@ -62,5 +62,7 @@ return {
       },
       _log_level = vim.log.levels.WARN,
     }
+
+    vim.api.nvim_set_keymap("n", "<leader>r", ":Rest run<CR>", { noremap = true, silent = true })
   end,
 }
